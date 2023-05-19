@@ -1,5 +1,4 @@
-# Phaser 3 Template
+Ninja Moncho
 
-Plantilla para iniciar nuevos proyectos con PHASER 3.
+Trabajo Práctico - PHASER - Programacion 1
 
-Contiene configuración inicial y buenas prácticas de estructuras de carpetas.
