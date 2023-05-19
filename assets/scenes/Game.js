@@ -24,7 +24,7 @@ export default class Game extends Phaser.Scene {
       ["Cuadrado"]: { count: 0, score: 20 },
       ["Rombo"]: { count: 0, score: 30 },
       ["RomboMalo"]: {count: 0, score: -10}
-    };``
+    };
     this.scoreTotal = 0;
     this.isWinner = false;
     this.isGameOver = false;
@@ -175,7 +175,7 @@ export default class Game extends Phaser.Scene {
       (this.shapesRecolected[TRIANGULO].count >= 2 &&
       this.shapesRecolected[CUADRADO].count >= 2 &&
       this.shapesRecolected[ROMBO].count >= 2) ||
-      this.scoreTotal === 100
+      this.scoreTotal == 100
     ) {
       this.isWinner = true;
     }
