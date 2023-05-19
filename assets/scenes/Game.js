@@ -35,6 +35,7 @@ export default class Game extends Phaser.Scene {
     // cargar fondo, plataformas, formas, jugador
     this.load.image("sky", "./assets/images/Cielo.png");
     this.load.image("platform", "./assets/images/platform.png");
+    this.load.image("platformmini", "./assets/images/platformmini.png");
     this.load.image("player", "./assets/images/Ninja.png");
     this.load.image(TRIANGULO, "./assets/images/Triangulo.png");
     this.load.image(ROMBO, "./assets/images/Rombo.png");
@@ -54,7 +55,9 @@ export default class Game extends Phaser.Scene {
     // add platforms static group
     this.platformsGroup = this.physics.add.staticGroup();
     this.platformsGroup.create(400, 568, "platform").setScale(2).refreshBody();
-
+    this.platformsGroup.create(200, 250, "platformmini").setScale(1).refreshBody();
+    this.platformsGroup.create(600, 300, "platformmini").setScale(1).refreshBody();
+    this.platformsGroup.create(320, 420, "platformmini").setScale(1).refreshBody();
     // add shapes group
     this.shapesGroup = this.physics.add.group();
 
