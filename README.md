@@ -1,4 +1,4 @@
 Ninja Moncho
 
-Trabajo Práctico - PHASER - Programacion 1
+Trabajo Práctico - PHASER - Programación 1
 
